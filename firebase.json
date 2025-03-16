@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "instagram-408cf",
+          "appId": "1:278173759000:android:a09cfc83147ea37c26356d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "instagram-408cf",
+          "configurations": {
+            "android": "1:278173759000:android:a09cfc83147ea37c26356d",
+            "ios": "1:278173759000:ios:d2bba97a7855489a26356d",
+            "macos": "1:278173759000:ios:d2bba97a7855489a26356d",
+            "web": "1:278173759000:web:9b9c0a8824a0a02c26356d",
+            "windows": "1:278173759000:web:67a25ea4deb5bab926356d"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
