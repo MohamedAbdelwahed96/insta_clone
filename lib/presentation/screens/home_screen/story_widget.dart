@@ -3,7 +3,7 @@ import 'package:instagram_clone/data/story_model.dart';
 import 'package:instagram_clone/data/user_model.dart';
 import 'package:instagram_clone/logic/user_provider.dart';
 import 'package:instagram_clone/presentation/screens/new_story.dart';
-import 'package:instagram_clone/presentation/screens/story_screen/story_screen.dart';
+import 'package:instagram_clone/presentation/screens/story_screen.dart';
 import 'package:provider/provider.dart';
 
 class StoryWidget extends StatefulWidget {

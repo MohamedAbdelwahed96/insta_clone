@@ -1,4 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/data/user_model.dart';
 import 'package:instagram_clone/logic/user_provider.dart';
@@ -113,17 +112,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
       color: Theme.of(context).colorScheme.surface,
       onSelected: (String value) {
         Navigator.push(context, MaterialPageRoute(builder: (context) =>
-        value == "Photos" ? Container(color: Colors.red)
-            : value == "Videos" ? Container(color: Colors.yellow)
-            : value == "Settings" ? Container(color: Colors.pink)
+        value == "1" ? Container(color: Colors.red)
+            : value == "2" ? Container(color: Colors.yellow)
             : SizedBox(),
           ),
         );
       },
       itemBuilder: (context) => [
-        PopupMenuItem(value: "Photos", child: Text("Photos & Screens")),
-        PopupMenuItem(value: "Videos", child: Text("Videos")),
-        PopupMenuItem(value: "Settings", child: Text("settings".tr())),
+        PopupMenuItem(value: "1", child: Text("1")),
+        PopupMenuItem(value: "2", child: Text("2"))
       ],
     );
   }
